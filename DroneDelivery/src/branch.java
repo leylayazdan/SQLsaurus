@@ -18,7 +18,8 @@ import java.awt.event.*;
 public class branch implements ActionListener
 {
     // command line reader 
-    private BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+    private BufferedReader 
+    in = new BufferedReader(new InputStreamReader(System.in));
 
     private Connection con;
 

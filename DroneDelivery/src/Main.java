@@ -22,6 +22,7 @@ class DC
 
        String userid = argv[0];
        String passwd = argv[1];
+
        
        String url = "jdbc:oracle:thin:@localhost:1522:ug";
 
@@ -49,7 +50,7 @@ class DC
        //once the driver has been registered and loaded from above, we set up a connection to Oracle database
        //The url above is specific to the Oracle database on the Ugrad machine.
  
-	   con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1522:ug", "ora_csid", "a12312323");
+	   con = DriverManager.getConnection(url, userid, passwd);
  
 	   System.out.println("Connection successful.");
 	    
