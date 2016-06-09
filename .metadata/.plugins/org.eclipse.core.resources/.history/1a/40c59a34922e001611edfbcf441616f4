@@ -1,0 +1,7 @@
+package Bean;
+
+import DroneDelivery.src.Administrator;
+
+public class AdministratorBean extends Administrator {
+	public Administrator Administrator()
+}

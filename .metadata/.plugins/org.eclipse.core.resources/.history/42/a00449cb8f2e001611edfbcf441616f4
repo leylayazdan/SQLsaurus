@@ -1,0 +1,21 @@
+
+public class Administrator {
+	 private String EmployeeID;
+	 private String Username;
+	 private String Password;
+	 private String Email;
+	 private String Name;
+		   //...constructors, getters, and setters
+	 
+	 public Administrator(int EmployeeID, String Username, String Password, String Email, String Name){
+		 this.EmployeeID = EmployeeID;
+		 this.Username = Username;
+		 this.Password = Password;
+		 this.Email = Email;
+		 this.Name = Name;
+	 }
+	 
+	 public String getEmployeeID(){
+		 return EmployeeID;
+	 }
+}
