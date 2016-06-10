@@ -5,41 +5,30 @@ public class Drone {
 	 private String Manufacturer;
 	 private String Model;
 	 
-	 public Drone(String DroneID, String Manufacturer, String Model){
-		 this.DroneID = DroneID;
-		 this.Manufacturer = Manufacturer;
-		 this.Model = Model;
+	 public Drone() {
 	 }
 	 
 	 public String getDroneID(){
 		 return DroneID;
 	 }
 	 
-	 public void setUsername(String Username){
-		 this.Username = Username;
+	 public void setDroneID(String DroneID){
+		 this.DroneID = DroneID;
 	 }
 	 
-	 public String getPassword(){
-		 return Password;
+	 public String getManufacturer(){
+		 return Manufacturer;
 	 }
 	 
-	 public void setPassword(String Password){
-		 this.Password = Password;
+	 public void setManufacturer(String Manufacturer){
+		 this.Manufacturer = Manufacturer;
 	 }
 	 
-	 public String getEmail(){
-		 return Email;
+	 public String getModel(){
+		 return Model;
 	 }
 	 
-	 public void setEmail(String Email){
-		 this.Email = Email;
-	 }
-	 
-	 public String getName(){
-		 return Name;
-	 }
-	 
-	 public void setName(String Name){
-		 this.Name = Name;
+	 public void setModel(String Model){
+		 this.Model = Model;
 	 }
 }

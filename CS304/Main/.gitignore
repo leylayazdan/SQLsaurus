@@ -6,3 +6,10 @@
 /DroneBean.class
 /RestaurantManager.class
 /RestaurantManagerBean.class
+/Restaurant.class
+/FoodItem.class
+/Reviews.class
+/Purchase.class
+/Delivers.class
+/isSelected.class
+/DailyLog.class
