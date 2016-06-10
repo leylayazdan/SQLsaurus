@@ -6,14 +6,8 @@ public class Administrator {
 	 private String Password;
 	 private String Email;
 	 private String Name;
-		   //...constructors, getters, and setters
 	 
-	 public Administrator(String EmployeeID, String Username, String Password, String Email, String Name){
-		 this.EmployeeID = EmployeeID;
-		 this.Username = Username;
-		 this.Password = Password;
-		 this.Email = Email;
-		 this.Name = Name;
+	 public Administrator() {
 	 }
 	 
 	 public String getEmployeeID(){
@@ -32,7 +26,7 @@ public class Administrator {
 		 this.Username = Username;
 	 }
 	 
-	 public String getPasword(){
+	 public String getPassword(){
 		 return Password;
 	 }
 	 

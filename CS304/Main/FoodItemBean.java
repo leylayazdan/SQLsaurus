@@ -20,7 +20,7 @@ public class FoodItemBean {
 	         rowSet.setUrl(DB_URL);
 	         rowSet.setUsername(DB_USER);
 	         rowSet.setPassword(DB_PASS);
-	         rowSet.setCommand("SELECT * FROM DAILYLOG");
+	         rowSet.setCommand("SELECT * FROM FOODITEM");
 	         rowSet.execute();
 
 	      catch (SQLException | ClassNotFoundException ex) {
@@ -30,7 +30,7 @@ public class FoodItemBean {
 	   public FoodItem create(FoodItem f) {
 	      try {
 	         rowSet.moveToInsertRow();
-	         rowSet.updateString("RestaurantName", ff.getRestaurantName());
+	         rowSet.updateString("RestaurantName", f.getRestaurantName());
 	         rowSet.updateString("FoodName", f.getFoodName());
 	         rowSet.updateString("ItemID", f.getItemID());
 	         rowSet.updateString("Category", f.getCategory());
@@ -97,7 +97,7 @@ public class FoodItemBean {
 	      } catch (SQLException ex) {
 	         ex.printStackTrace();
 	      }
-	      return f;
+		  return f;
 	   }
 }
 

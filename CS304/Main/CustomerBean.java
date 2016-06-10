@@ -1,6 +1,8 @@
 package Main;
 
+import java.sql.*;
 import java.sql.SQLException;
+import javax.sql.rowset.*;
 import javax.sql.rowset.JdbcRowSet;
 
 public class CustomerBean {
@@ -18,7 +20,7 @@ public class CustomerBean {
 	         rowSet.setUrl(DB_URL);
 	         rowSet.setUsername(DB_USER);
 	         rowSet.setPassword(DB_PASS);
-	         rowSet.setCommand("SELECT * FROM Person");
+	         rowSet.setCommand("SELECT * FROM CUSTOMER");
 	         rowSet.execute();
 
 	      catch (SQLException | ClassNotFoundException ex) {

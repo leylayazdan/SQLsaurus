@@ -3,8 +3,7 @@ package Main;
 import java.sql.*;
 import java.sql.SQLException;
 import javax.sql.rowset.*;
-//import javax.sql.rowset.JdbcRowSet;
-//import javax.sql.rowset.JdbcRowSetImpl;
+import javax.sql.rowset.JdbcRowSet;
 
 public class RestaurantManagerBean {
 	   static final String JDBC_DRIVER =
@@ -21,7 +20,7 @@ public class RestaurantManagerBean {
 	         rowSet.setUrl(DB_URL);
 	         rowSet.setUsername(DB_USER);
 	         rowSet.setPassword(DB_PASS);
-	         rowSet.setCommand("SELECT * FROM Person");
+	         rowSet.setCommand("SELECT * FROM RESTAURANT MANAGER");
 	         rowSet.execute();
 
 	      catch (SQLException | ClassNotFoundException ex) {
