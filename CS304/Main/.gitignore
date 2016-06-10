@@ -13,3 +13,11 @@
 /Delivers.class
 /isSelected.class
 /DailyLog.class
+/DailyLogBean.class
+/DeliversBean.class
+/FoodItemBean.class
+/isSelectedBean.class
+/PurchaseBean.class
+/RestaurantBean.class
+/ReviewsBean.class
+/AdministratorBean.class
