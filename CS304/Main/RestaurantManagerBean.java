@@ -4,6 +4,7 @@ import java.sql.*;
 import java.sql.SQLException;
 import javax.sql.rowset.*;
 import javax.sql.rowset.JdbcRowSet;
+import com.sun.rowset.JdbcRowSetImpl;
 
 public class RestaurantManagerBean {
 	   static final String JDBC_DRIVER =
@@ -22,6 +23,7 @@ public class RestaurantManagerBean {
 	         rowSet.setPassword(DB_PASS);
 	         rowSet.setCommand("SELECT * FROM RESTAURANT MANAGER");
 	         rowSet.execute();
+	      }
 
 	      catch (SQLException | ClassNotFoundException ex) {
 	         ex.printStackTrace();

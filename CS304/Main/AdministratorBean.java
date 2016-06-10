@@ -5,6 +5,8 @@ import java.sql.SQLException;
 import javax.sql.rowset.*;
 import javax.sql.rowset.JdbcRowSet;
 
+import com.sun.rowset.JdbcRowSetImpl;
+
 public class AdministratorBean {
 	   static final String JDBC_DRIVER =
 			      "com.mysql.jdbc.Driver";
@@ -22,6 +24,7 @@ public class AdministratorBean {
 	         rowSet.setPassword(DB_PASS);
 	         rowSet.setCommand("SELECT * FROM ADMINISTRATOR");
 	         rowSet.execute();
+	      }
 
 	      catch (SQLException | ClassNotFoundException ex) {
 	         ex.printStackTrace();

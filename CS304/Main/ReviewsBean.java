@@ -4,6 +4,8 @@ import java.sql.*;
 import java.sql.SQLException;
 import javax.sql.rowset.*;
 import javax.sql.rowset.JdbcRowSet;
+import com.sun.rowset.JdbcRowSetImpl;
+import com.sun.rowset.JdbcRowSetImpl;
 
 public class ReviewsBean {
 	   static final String JDBC_DRIVER =
@@ -22,6 +24,7 @@ public class ReviewsBean {
 	         rowSet.setPassword(DB_PASS);
 	         rowSet.setCommand("SELECT * FROM FOODITEM");
 	         rowSet.execute();
+	      }
 
 	      catch (SQLException | ClassNotFoundException ex) {
 	         ex.printStackTrace();

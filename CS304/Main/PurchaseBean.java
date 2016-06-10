@@ -4,6 +4,7 @@ import java.sql.*;
 import java.sql.SQLException;
 import javax.sql.rowset.*;
 import javax.sql.rowset.JdbcRowSet;
+import com.sun.rowset.JdbcRowSetImpl;
 
 public class PurchaseBean {
 	   static final String JDBC_DRIVER =
@@ -22,6 +23,7 @@ public class PurchaseBean {
 	         rowSet.setPassword(DB_PASS);
 	         rowSet.setCommand("SELECT * FROM PURCHASE");
 	         rowSet.execute();
+	      }
 
 	      catch (SQLException | ClassNotFoundException ex) {
 	         ex.printStackTrace();
