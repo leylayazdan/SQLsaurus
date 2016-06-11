@@ -21,3 +21,10 @@
 /RestaurantBean.class
 /ReviewsBean.class
 /AdministratorBean.class
+/AdministratorUI.class
+/AppMain.class
+/CustomerUI.class
+/mainUI.class
+/mainUI$ButtonHandler.class
+/RManagerUI.class
+/SingletonFrame.class

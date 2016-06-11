@@ -1,5 +1,7 @@
 package Main;
 
+import java.sql.Connection;
+
 public class Administrator {
 	 private String EmployeeID;
 	 private String Username;
@@ -8,6 +10,7 @@ public class Administrator {
 	 private String Name;
 	 
 	 public Administrator() {
+		 
 	 }
 	 
 	 public String getEmployeeID(){
